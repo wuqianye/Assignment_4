@@ -1,0 +1,21 @@
+html {
+    min-width: 500px;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.sections {
+    padding : 40px;
+    border-bottom: 1px solid;
+}
+.row {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+#ansButtons {
+    min-width: 200px;
+}

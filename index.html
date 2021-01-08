@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="container">            
+            <!--Q1-->
+            <div class="sections">
+                <h4>Two Buttons</h4>
+                <div class="row">
+                    <button id="btn1" class="btn btn-info" type="button">btn</button>
+                    <h5 id="ansButtons"></h5>
+                    <button id="btn2" class="btn btn-info" type="button">btn</button>
+                </div>
+            </div>
+
+            <!--Q2-->
+            <div class="sections">
+                <h4>Don't Hover</h4>
+                <button id="dontHover" class="btn btn-danger btn-lg" type="button"><strong>Don't Hover Over Me</strong></button>
+            </div>
+
+            <!--Q3 & Q4-->
+            <div class="sections">
+                <h4>Check Password</h4>
+                <form>
+                    <div class="input-group">
+                        <input id="username" class="form-control" name="username" type="text" placeholder="username">
+                        <input id="email" class="form-control" name="email" type="email" placeholder="email">
+                        <input id="password" class="form-control" name="password" type="password" placeholder="password">
+                        <div class="input-group-append">
+                            <button id="submit" class="btn btn-dark" name="submit" type="submit">Submit</button>
+                        </div>
+                    </div>
+                </form>
+                <p id="ansPassword"></p>
+            </div>
+
+            <!--Q6-->
+            <div class="sections">
+                <h4>Calculate Volume of Sphere</h4>
+                <form>
+                    <div class="input-group">
+                        <input id="radius" class="form-control" name="radius" type="number" placeholder="radius">
+                        <div class="input-group-append">
+                            <button id="calculate" class="btn btn-dark" name="calculate" type="submit">Calculate</button>
+                        </div>
+                    </div>
+                </form>
+                <p id="ansCalculate"></p>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
