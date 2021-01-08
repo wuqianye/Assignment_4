@@ -24,6 +24,6 @@ document.getElementById("submit").addEventListener("click", () => {
 //Q6, calculate volume of sphere
 document.getElementById("calculate").addEventListener("click", () => {
     const radius = document.getElementById("radius").value;
-    const volume = (4/3)*Math.PI*(Math.pow(radius, 3));
+    const volume = (4/3) * Math.PI * Math.pow(radius, 3);
     document.getElementById("ansCalculate").innerText = "Volume of the sphere is " + volume;
 });
