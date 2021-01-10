@@ -13,17 +13,19 @@ document.getElementById("dontHover").addEventListener("mouseenter", () => {
 });
 
 //Q3 & Q4, check password
-document.getElementById("submit").addEventListener("click", () => {
+document.getElementById("submit").addEventListener("click", (e) => {
     if (document.getElementById("password").value == 12345678) {
         document.getElementById("ansPassword").innerText = "Correct password";
     } else {
         alert("Wrong password");
     }
+    e.preventDefault();
 });
 
 //Q6, calculate volume of sphere
-document.getElementById("calculate").addEventListener("click", () => {
+document.getElementById("calculate").addEventListener("click", (e) => {
     const radius = document.getElementById("radius").value;
     const volume = (4/3) * Math.PI * Math.pow(radius, 3);
     document.getElementById("ansCalculate").innerText = "Volume of the sphere is " + volume;
+    e.preventDefault();
 });
